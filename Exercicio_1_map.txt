@@ -1,0 +1,47 @@
+Exercícios
+
+Nos exercícios abaixo, onde aparecer "Java", você poderá também usar C++/STL.
+
+1.Defina o que é feito na etapa de Análise e o que é feito na etapa de Projeto ao desenvolver software.
+Resolução do exercício 
+R. No desenvolvimento de software, a etapa de Análise consiste a fazer um estudo profundo para conhecer melhor o que se deve fazer, o analista investiga e separa os elementos. Faz avaliação critica dos requisitos funcionais ou não funcionais, especificar, construir e documentar o projeto.
+
+2.Enumere as vantagens da abordagem Orientada a Objetos para o desenvolvimento de software.
+R. Quando fizemos uma abordagem Orientada Objetos para desenvolvimento de software sempre teremos algumas vantagens a seguir:
+	a.Grande maior facilidade para reutilização de código
+	b.Possibilidade de trabalhar em um nível mais elevado de abstração
+	c.Utilização de um único padrão conceitual durante todo processo de criação de software
+	d.Grande facilidade de comunicação com os usuários e com outros profissionais de informática.
+	e.Possibilidade de se construir sistema muito mais complexos etc.
+3.Qual é o motivo de levantar Requisitos Funcionais para desenvolver software e o que faz parte de uma descrição de Requisitos Funcionais?
+R. Levantamento de Requisitos tem com objetivo, compreender o problema, dando aos desenvolvedores e usuários, requisitos funcionais definem as funcionalidades e o comportamento do sistema; na descrição de Requisitos funcionais encontra-se a identificação das necessidades de usuários, verificação da viabilidade de implementar as necessidades, distribuição das funções do sistema.
+4.Mostre como instanciar um objeto da classe ContaBancária em Java fornecendo o CPF (um string) do titular como argumento. Com o objeto resultante, faça um depósito de R$100,00 e imprima o saldo. Você pode escolher nomes apropriados para os métodos.
+
+5.Explique o que é um Iterador em Java. Qual é sua principal vantagem?
+R. um Iterador em java é nada mais que um padrão que permite o acesso sequencialmente aos elementos de um objeto agregado...esses podem estar num ArrayList ou que quer que seja.
+6.Mostre a implementação de uma classe ContaBancária. Invente atributos e métodos.
+7.Explique a diferença de funcionamento entre um "return" e um "throw". Seja específico.
+R. “return”  é um comando que é utilizado num determinado método para poder retornar  um resultado esperado, e o “throw”  é um comando que é usado num método que trata uma excessão. 
+8.Mostre, usando Java, como especializar uma classe ContaBancária para criar uma ContaCorrente e uma ContaPoupança.
+9.Explique as vantagens e desvantagens do polimorfismo. Dê exemplos.
+R. Vantagens de polimorfismo é que permite a um método produzir resultados diferentes, dependendo do objeto ao qual é aplicado, um nome para várias formas, ou várias implementações (vários métodos com o mesmo nome)  já desvantagem dele...
+
+10.Explique a afirmação: "Em Java, o conceito de interfaces permite obter mais polimorfismo do que seria possível com classes abstratas".
+R.
+11.Qual é a diferença entre "herança de tipo" e "herança de implementação"?
+R. 
+
+12.Quais são as vantagens e desvantagens de acoplamento forte entre objetos?
+R.
+
+13.Ao falar de boa programação, fala-se: "A decomposição deve esconder algo." O que poderia ser escondido, por exemplo?
+R.
+
+14.O que é uma "responsabilidade de uma classe"? Por que queremos minimizar o número de responsabilidades? "Mais" não seria melhor?
+R. A implementação de uma classe deve ser o mais simples possível, classes com mais de uma responsabilidade são complexas; concluímos que uma classe com apenas uma responsabilidade é simples para usar modificar e reutilizar.
+
+15.Por que modelar papeis (roles) através de herança é inferior a modelá-los através de composição?
+
+
+
+
