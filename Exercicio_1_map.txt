@@ -20,9 +20,11 @@ R. Levantamento de Requisitos tem com objetivo, compreender o problema, dando ao
 5.Explique o que é um Iterador em Java. Qual é sua principal vantagem?
 R. um Iterador em java é nada mais que um padrão que permite o acesso sequencialmente aos elementos de um objeto agregado...esses podem estar num ArrayList ou que quer que seja.
 6.Mostre a implementação de uma classe ContaBancária. Invente atributos e métodos.
+
 7.Explique a diferença de funcionamento entre um "return" e um "throw". Seja específico.
 R. “return”  é um comando que é utilizado num determinado método para poder retornar  um resultado esperado, e o “throw”  é um comando que é usado num método que trata uma excessão. 
 8.Mostre, usando Java, como especializar uma classe ContaBancária para criar uma ContaCorrente e uma ContaPoupança.
+
 9.Explique as vantagens e desvantagens do polimorfismo. Dê exemplos.
 R. Vantagens de polimorfismo é que permite a um método produzir resultados diferentes, dependendo do objeto ao qual é aplicado, um nome para várias formas, ou várias implementações (vários métodos com o mesmo nome)  já desvantagem dele...
 
