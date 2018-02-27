@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.cesed.si.p3.classes;
+package br.cesed.si.map.classes;
 
 /**
  * @author Diego Kazadi

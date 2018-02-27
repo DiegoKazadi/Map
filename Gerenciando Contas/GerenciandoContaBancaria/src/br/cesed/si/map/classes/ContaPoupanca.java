@@ -1,9 +1,9 @@
 /**
  * 
  */
-package br.cesed.si.p3.classes;
+package br.cesed.si.map.classes;
 
-import br.cesed.si.p3.contas.Conta;
+import br.cesed.si.map.contas.Conta;
 
 /**
  * @author aluno
