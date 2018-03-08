@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.cesed.map.conta;
+package br.cesed.si.map.abstrat;
 
 /**
  * @author aluno

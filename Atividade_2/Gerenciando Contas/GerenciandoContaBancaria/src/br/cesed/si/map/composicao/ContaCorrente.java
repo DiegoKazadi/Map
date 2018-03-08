@@ -1,96 +1,140 @@
 /**
  * 
  */
-package br.cesed.si.map.contas;
+package br.cesed.si.map.composicao;
 
 /**
- * @author Diego
+ * 
+ */
+import br.cesed.si.map.exception.Conta;
+
+/**
+ * @author Diego Kazadi
  *
  */
-public abstract class Conta {
-	// Variables
+public class ContaCorrente extends Conta{
+	// variables
 	private int agencia;
 	private int conta;
 	private double saldo;
 	private String titular;
+	
 	/**
 	 * @param agencia
 	 * @param conta
 	 * @param saldo
 	 * @param titular
 	 */
-	public Conta(int agencia, int conta, double saldo, String titular) {
-		super();
+	public ContaCorrente(int agencia, int conta, double saldo, String titular) {
+		super(conta, conta, saldo, titular);
 		this.agencia = agencia;
 		this.conta = conta;
 		this.saldo = saldo;
 		this.titular = titular;
 	}
+
 	/**
 	 * @param agencia
 	 * @param conta
 	 * @param titular
 	 */
-	public Conta(int agencia, int conta, String titular) {
-		super();
+	public ContaCorrente(int agencia, int conta, String titular) {
+		super(conta, conta, titular);
 		this.agencia = agencia;
 		this.conta = conta;
 		this.titular = titular;
 	}
 	
+	/**
+	 * @param agencia
+	 * @param conta
+	 * @param saldo
+	 * @param titular
+	 * @param agencia2
+	 * @param conta2
+	 * @param saldo2
+	 * @param titular2
+	 */
+	public ContaCorrente(int agencia, int conta, double saldo, String titular, int agencia2, int conta2, double saldo2,
+			String titular2) {
+		super(agencia, conta, saldo, titular);
+		agencia = agencia2;
+		conta = conta2;
+		saldo = saldo2;
+		titular = titular2;
+	}
+
+	public void sacar(double montante){
+		if (saldo >= montante){
+			saldo -= montante;
+		}else{
+			System.out.println("Saldo insuficiente..."); 
+		}
+		
+	}
+
 	/**
 	 * @return the agencia
 	 */
 	public int getAgencia() {
 		return agencia;
 	}
+
 	/**
 	 * @param agencia the agencia to set
 	 */
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
+
 	/**
 	 * @return the conta
 	 */
 	public int getConta() {
 		return conta;
 	}
+
 	/**
 	 * @param conta the conta to set
 	 */
 	public void setConta(int conta) {
 		this.conta = conta;
 	}
+
 	/**
 	 * @return the saldo
 	 */
 	public double getSaldo() {
 		return saldo;
 	}
+
 	/**
 	 * @param saldo the saldo to set
 	 */
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+
 	/**
 	 * @return the titular
 	 */
 	public String getTitular() {
 		return titular;
 	}
+
 	/**
 	 * @param titular the titular to set
 	 */
 	public void setTitular(String titular) {
 		this.titular = titular;
 	}
-	
+
+	@Override
 	public void depositar(double montante) {
-		this.saldo += montante;
+		if (montante <= 0) {
+			System.out.println("Insera montante maior a zero");
+		}
+		saldo += montante;
 	}
-	
-	public abstract void sacar(double montante);	
-	
+
 }

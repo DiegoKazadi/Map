@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.cesed.si.map.classes;
+package br.cesed.si.map.exception;
 
 /**
  * @author Diego Kazadi

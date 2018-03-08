@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.cesed.si.map.contas;
+package br.cesed.si.map.exception;
 
 /**
  * @author aluno

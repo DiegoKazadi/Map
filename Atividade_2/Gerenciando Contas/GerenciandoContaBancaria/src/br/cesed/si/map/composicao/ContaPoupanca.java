@@ -1,9 +1,12 @@
 /**
  * 
  */
-package br.cesed.si.map.classes;
+package br.cesed.si.map.composicao;
 
-import br.cesed.si.map.contas.Conta;
+/**
+ * 
+ */
+import br.cesed.si.map.exception.Conta;
 
 /**
  * @author aluno
@@ -45,3 +48,4 @@ public class ContaPoupanca extends Conta {
 	}
 	
 }
+
