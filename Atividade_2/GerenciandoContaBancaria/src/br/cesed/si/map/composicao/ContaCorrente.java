@@ -3,10 +3,7 @@
  */
 package br.cesed.si.map.composicao;
 
-/**
- * 
- */
-import br.cesed.si.map.exception.Conta;
+import br.cesed.si.map.abstrat.Conta;
 
 /**
  * @author Diego Kazadi

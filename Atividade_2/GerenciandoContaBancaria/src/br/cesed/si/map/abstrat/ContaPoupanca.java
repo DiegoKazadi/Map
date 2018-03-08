@@ -3,14 +3,13 @@
  */
 package br.cesed.si.map.abstrat;
 
-import br.cesed.si.map.exception.Conta;
-
 /**
  * @author aluno
  *
  */
 public class ContaPoupanca extends Conta {
 	private int juros;
+	private double saldo;
 	
 	/**
 	 * @param agencia
@@ -41,7 +40,21 @@ public class ContaPoupanca extends Conta {
 	@Override
 	public void sacar(double montante) {
 		// TODO implementando o método sacar
+		if(montante > 0) {
+			if (saldo >= montante) {
+				saldo -= montante;
+			}else {
+				System.out.println("Saldo Disponivel é:" + (this.saldo));
+			}			
+			
+		}else {
+			System.out.println("O montante do saque deve ser positivo");
+		}
 		
+	}
+	public void deposita(double montante) {
+		this.saldo += montante;
+		System.out.println("operação realizada com sucesso teu saldo é "+ (this.saldo));
 	}
 	
 }
