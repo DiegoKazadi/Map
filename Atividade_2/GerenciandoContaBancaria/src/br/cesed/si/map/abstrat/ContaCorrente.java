@@ -59,12 +59,13 @@ public class ContaCorrente extends Conta{
 		titular = titular2;
 	}
 
-	public void sacar(double montante){
+	public double sacar(double montante){
 		if (saldo >= montante){
 			saldo -= montante;
 		}else{
 			System.out.println("Saldo insuficiente..."); 
 		}
+		return getSaldo();
 		
 	}
 

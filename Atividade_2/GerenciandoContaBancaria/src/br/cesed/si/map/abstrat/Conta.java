@@ -3,6 +3,8 @@
  */
 package br.cesed.si.map.abstrat;
 
+import br.cesed.si.map.exception.SaldoInsuficienteException;
+
 /**
  * @author Diego
  *
@@ -92,6 +94,10 @@ public abstract class Conta {
 		this.saldo += montante;
 	}
 	
-	public abstract void sacar(double montante);	
+	public abstract double sacar(double montante) throws SaldoInsuficienteException;
+	public double deposito(double montante) throws SaldoInsuficienteException {
+		// TODO Auto-generated method stub
+		return 0;
+	}	
 	
 }

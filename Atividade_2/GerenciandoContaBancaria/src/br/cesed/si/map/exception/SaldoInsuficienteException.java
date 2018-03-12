@@ -12,9 +12,15 @@ public class SaldoInsuficienteException extends Exception {
 	/**
 	 * @param message
 	 */
-	public SaldoInsuficienteException(String message) {
-		super(message);
+	private static final long serialVersionUID = 1L;
+	
+	private static final String  MENSAGEM = "O Saldo insuficiente para realizar esta operação";
+	
+	public SaldoInsuficienteException() {
+		super(MENSAGEM);
 
 	}
 
+	
+	
 }

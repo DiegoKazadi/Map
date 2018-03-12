@@ -38,7 +38,7 @@ public class ContaPoupanca extends Conta {
 	}
 
 	@Override
-	public void sacar(double montante) {
+	public double sacar(double montante) {
 		// TODO implementando o método sacar
 		if(montante > 0) {
 			if (saldo >= montante) {
@@ -50,6 +50,7 @@ public class ContaPoupanca extends Conta {
 		}else {
 			System.out.println("O montante do saque deve ser positivo");
 		}
+		return montante;
 		
 	}
 	public void deposita(double montante) {
