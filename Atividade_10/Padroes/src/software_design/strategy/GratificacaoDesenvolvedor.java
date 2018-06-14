@@ -9,7 +9,9 @@ package software_design.strategy;
  */
 
 public class GratificacaoDesenvolvedor implements Gratificacao {
-            @Override
+            
+			
+			@Override
             public double calcularGratificacao(Funcionario umFuncionario) {
                   Object getNivel;
 				if (umFuncionario.getNivel() >= 2) {
